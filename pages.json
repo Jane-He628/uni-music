@@ -1,0 +1,99 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+		,{
+		    "path" : "components/singerInfo/singerInfo",
+		    "style" : {
+				"navigationBarTitleText": "歌手主页"
+			}
+		},
+		{
+		    "path" : "pages/songList/songList",
+		    "style" : {
+				"navigationBarTitleText": "歌单"
+			}
+		}
+		,
+		
+		{
+		    "path" : "pages/player/player",
+		    "style" : {
+				"navigationBarTitleText": "歌曲播放"
+			}
+		},
+		{
+            "path" : "pages/my/my",
+            "style" : {
+				"navigationBarTitleText": "个人中心"
+			}
+        }
+        ,{
+            "path" : "components/song-item/song-item",
+            "style" : {}
+        },
+		{
+		    "path" : "pages/singer/singer",
+		    "style" : {
+				"navigationBarTitleText": "歌手"
+			}
+		}
+        
+        
+        ,{
+            "path" : "pages/mv/mv",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/player-floating-window/player-floating-window",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"navigationBarTitleText": "搜索"
+			}
+        }
+        ,{
+            "path" : "pages/searchDetail/searchDetail",
+            "style" : {"navigationBarTitleText": "结果"}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FF6666",
+		"backgroundColor": "#FF6666"
+	}
+	,
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#3cc51f",
+		
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/icons/home.png",
+	        "selectedIconPath": "static/icons/home-active.png",
+	        "text": "首页"
+	    }, 
+		{
+		    "pagePath": "pages/search/search",
+		    "iconPath": "static/icons/search.png",
+		    "selectedIconPath": "static/icons/search-active.png",
+		    "text": " 搜索"
+		},
+		{
+		    "pagePath": "pages/singer/singer",
+		    "iconPath": "static/icons/member.png",
+		    "selectedIconPath": "static/icons/member-active.png",
+		    "text": " 歌手"
+		}
+		]
+	}
+}

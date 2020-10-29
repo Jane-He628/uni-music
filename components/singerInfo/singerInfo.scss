@@ -1,0 +1,301 @@
+page {
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+	}
+
+	.singer-box {
+		width: 100%;
+		height: 100%;
+
+		// display: flex;
+		// flex-direction: column;
+	}
+
+	.singer-info {
+		width: 100%;
+		height: 500rpx;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		position: relative;
+
+		.singer-name {
+			color: #fff;
+			font-size: 32rpx;
+			position: absolute;
+			left: 40rpx;
+			bottom: 40rpx;
+		}
+	}
+
+	.desc-info {
+		width: 100%;
+		// height: 400rpx;
+		// flex: 1;
+		padding-bottom: 30rpx;
+
+		position: relative;
+
+		.desc-header {
+			width: 100%;
+			padding: 10rpx 0rpx;
+		}
+
+		.singer-home {
+			width: 100%;
+			padding: 0 20rpx;
+
+			.remen {
+				width: 100%;
+				height: 80rpx;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				.left-box {
+					display: flex;
+					align-items: center;
+
+					image {
+						width: 50rpx;
+
+
+						align-items: center;
+						margin-right: 10rpx;
+					}
+
+					text {
+						font-size: 30rpx;
+						color: #000;
+						font-weight: bold;
+					}
+				}
+
+				.right-box {
+					button {
+						width: 160rpx;
+						height: 60rpx;
+						border-radius: 50rpx;
+						font-size: 26rpx;
+						text-align: center;
+						line-height: 60rpx;
+					}
+				}
+			}
+
+			.remen-song-list {
+				width: 100%;
+
+				// padding: 10rpx 20rpx;
+				.remen-item {
+					position: relative;
+					display: flex;
+					align-items: center;
+					margin-bottom: 30rpx;
+
+					.avatar {
+						width: 80rpx;
+						height: 80rpx;
+						position: absolute;
+						left: 0;
+						border-radius: 10rpx;
+					}
+
+					.more-icon {
+						width: 40rpx;
+						position: absolute;
+						right: 0;
+					}
+				}
+			}
+
+			.singer-more-info {
+				width: 100%;
+				line-height: 48rpx;
+
+				text-overflow: -o-ellipsis-lastline;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 4;
+				line-clamp: 4;
+				-webkit-box-orient: vertical;
+
+
+			}
+
+			.similar-singer {
+				width: 100%;
+				margin-top: 30rpx;
+
+				.similar-header {
+					font-size: 15px;
+					color: #000;
+					font-weight: bold;
+				}
+
+				.similar-singer-box {
+					margin-top: 20rpx;
+
+					.similar-singer-info {
+						white-space: nowrap; // 滚动必须加的属性
+						width: 100%;
+						// height: 280rpx;
+						// padding: 20rpx;
+						margin: 0 auto;
+
+						.item {
+							width: 28%;
+							height: 240rpx;
+							margin-right: 20upx;
+							display: inline-block;
+							vertical-align: top;
+							background-color: #f4f0e6;
+							border-radius: 16rpx;
+							position: relative;
+
+							.img {
+								display: inline-block;
+
+								image {
+									width: 120rpx;
+									height: 120rpx;
+									border-radius: 50%;
+									position: absolute;
+									left: 50%;
+									transform: translateX(-50%);
+								}
+							}
+
+							.item-title {
+								display: block; // 让字体换行
+								width: 90%;
+								font-size: 30rpx;
+								line-height: 40rpx;
+								position: absolute;
+								text-align: center;
+								bottom: 20rpx;
+								width: 100%;
+							}
+						}
+					}
+				}
+
+
+			}
+		}
+
+		.song-list-box {
+
+			box-sizing: border-box;
+			width: 100%;
+			// height: 500rpx;
+			background-color: #fff;
+			// position: absolute;
+			// bottom: 0;
+			// top: 400rpx;
+			border-top-left-radius: 30rpx;
+			border-top-right-radius: 30rpx;
+			padding: 20rpx 32rpx;
+
+			.song-header {
+				display: flex;
+				align-items: center;
+				width: 100%;
+
+				image {
+					width: 50rpx;
+
+				}
+
+				view {
+					display: flex;
+					align-items: center;
+					margin-left: 10rpx;
+				}
+
+			}
+
+			.song-list {
+				width: 100%;
+				margin-top: 20rpx;
+
+
+			}
+		}
+
+		.sing-desc-intro {
+			width: 100%;
+			padding: 20rpx 32rpx;
+
+			.dsc-title {
+				display: flex;
+				align-items: center;
+				margin-bottom: 20rpx;
+
+				.border-react {
+					width: 10rpx;
+					height: 40rpx;
+					background-color: red;
+					border-radius: 10rpx;
+					margin-right: 10rpx;
+				}
+
+				text {
+					font-size: 28rpx;
+					color: #000;
+				}
+			}
+		}
+		.songer-mv{
+			width: 100%;
+			padding: 20rpx 32rpx;
+			
+			.mv-header{
+				display: flex;
+				align-items: center;
+			}
+			.mv-list{
+				width: 100%;
+				margin-top: 20rpx;
+				.mv-item{
+					display: flex;
+					align-items: center;
+					margin-bottom: 20rpx;
+					.mv-info{
+						position: relative;
+						.mv-img{
+							width: 280rpx;
+							height: 140rpx;
+							border-radius: 16rpx;
+						}
+						.check-box{
+							position: absolute;
+							right: 8rpx;
+							top: 5rpx;
+							display: flex;
+							align-items: center;
+							image{
+								width: 30rpx;
+							}
+							text{
+								color: #d9d9f3;
+								font-size: 24rpx;
+								// font-weight: bold;
+							}
+						}
+					}
+					.mv-desc{
+						margin-left: 30rpx;
+						.sing-name{
+							color: #000;
+							font-size: 28rpx;
+						}
+						.mv-time{
+							font-size: 24rpx;
+						}
+					}
+				}
+			}
+		}
+	}
